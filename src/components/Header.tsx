@@ -4,19 +4,25 @@ import {
   Container,
   Flex,
   Heading,
+  Image,
   Input,
   Spacer,
 } from "@chakra-ui/react";
 
 export const Header = () => {
   return (
-    <Box as="section" bg="purple.600">
+    <Box as="section" boxShadow="base">
       <Container maxW="1400">
         <Flex justifyContent="space-between" alignItems="center" height={20}>
-          <Heading as="h3">Logo</Heading>
+          <Image
+            width={50}
+            cursor="pointer"
+            src="/public/logo-1.png"
+            alt="cineflixx logo"
+          />
           <Spacer />
           <Flex gap={2} align="center">
-            <Input placeholder="Basic usage" />
+            <Input placeholder="Search" />
 
             <Avatar name="Dan Abrahmov" src="https://bit.ly/dan-abramov" />
           </Flex>
